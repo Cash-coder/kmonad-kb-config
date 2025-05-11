@@ -81,6 +81,8 @@
   v (tap-hold-next-release 400 v (layer-toggle numbers))
   n (tap-hold-next-release 300 n (layer-toggle arrows))
   p (tap-hold-next-release 400 p (layer-switch ES-layer)) 
+  ;;i (tap-hold-next-release 400 i (layer-switch ES-layer)) 
+
   ;;p (tap-hold-next-release 500 p (layer-switch  pythonNamer)) ;;change spacebar for '_'
   tgb (tap-hold-next-release 400 p (layer-switch baseLayer)) ;;switch back to base layer
 

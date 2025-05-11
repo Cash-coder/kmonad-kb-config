@@ -24,14 +24,36 @@
 
 ;; emtpy blueprit layer -------------------------------------------------- 
 
-#|
-(deflayer usAnsi60 + Function-keys-row
+#|    usAnsi60 + Function-keys-row
+(deflayer 
   _    _    _    _    _    _    _    _    _    _    _    _    _    _ 
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _              _              _    _    _    _
+)
+|#
+
+#|   usAnsi60 + Function-keys-row + guidance row
+(deflayer
+;;Esc  F1  F2  F3  F4  F5  F6  F7  F8  F9  F10  F11  F12  Lock
+   _   _    _  _   _   _   _   _   _   _    _    _   _    _ 
+
+;;`~   1!  2@   3#  4$  5%  6^   7&   8*   9(   0)  -_    =+  Backspace  
+   _   _    _   _   _   _    _   _    _    _    _    _    _    _
+
+;;Tab   Q   W   E   R   T   Y   U   I   O   P   [{   ]}   \|   Return
+   _    _   _   _   _   _   _   _   _   _   _   _    _     _ 
+
+;;Caps  A   S   D   F   G   H   J   K   L   ;:   '"   Enter  
+   _    _   _   _   _   _   _   _   _   _    _    _    _
+
+;;Shift Z   X   C   V   B   N   M   ,<   .>   /?  Shift         
+   _    _   _   _   _   _   _   _   _    _    _     _
+
+;;Wld   C    S       Spacebar       S    Alt  Ctrl  ←  ↓  ↑  →  
+   _    _    _            _         _    _     _    _  _  _  _ 
 )
 |#
 
@@ -227,7 +249,6 @@
 )
 
 
-
 (deflayer pythonNamer  ;;change space bar for '_' 
 
   _    _    _    _    _    _    _    _    _    _    _    _    _    _ 
@@ -239,6 +260,22 @@
 
 )
 
+#|
+(deflayer ES-layer ñññá, é, í, ó, ú
+;;esc  F1   F2   F3   F4   F5   F6   F7   F8   F9   F10  F11  F12  del
+  _     _   _    _    _    _    _    _    _    _    _    _    _    _
+;;grv  1    2    3    4    5    6    7    8    9    0     -    =    bspc
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+;;tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+;;caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+;;lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  _    _    _    _    _    _    _    _    _    _    _    _
+;;lctl lmet lalt           spc            ralt rmet cmp  rctl
+  _     _    _              _              _    _    _    _
+)
+|#
 
 
 (defsrc :name numpad
